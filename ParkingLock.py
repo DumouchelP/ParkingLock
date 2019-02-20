@@ -124,7 +124,7 @@ class Gear:
         J=J1.Rotation(R,(theta2-theta1)/2)
         #est ce un probleme de ne pas controler directement la pente du créneau ? (on ne se sert pas de alphaJ)
         #sinon on pourrait remplacer les deux lignes précédentes par:J=K.Translation(vm.point2D((-self.L9*npy.sin(alphaJ),-self.L9*npy.cos(alphaJ))))
-        #Dans ce cas il faudrait peut être paramétrer K de la même façon
+        #Dans ce cas il faudrait peut être paramétrer H de la même façon
         I=J.Rotation(R,theta1)
         
         l1=primitives2D.RoundedLineSegments2D([K,J,I,H],{'''je ne sais pas trop quoi mettre ici'''})
